@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160ECC0A1FF8173F006CAC12 /* HighScoreModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC091FF8173E006CAC12 /* HighScoreModelManager.m */; };
+		160ECC0D1FF81B7F006CAC12 /* HighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC0C1FF81B7F006CAC12 /* HighScore.m */; };
+		160ECC161FF93DD9006CAC12 /* MD5+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC111FF93DD7006CAC12 /* MD5+NSString.m */; };
+		160ECC171FF93DD9006CAC12 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC131FF93DD8006CAC12 /* Network.m */; };
+		160ECC181FF93DD9006CAC12 /* UIImageView+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC151FF93DD9006CAC12 /* UIImageView+URL.m */; };
+		160ECC1B1FF93DE6006CAC12 /* HeroesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC191FF93DE6006CAC12 /* HeroesTableViewController.m */; };
+		160ECC1E1FF946E6006CAC12 /* HeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC1C1FF946E5006CAC12 /* HeroModel.m */; };
+		160ECC211FF946F6006CAC12 /* HeroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC201FF946F6006CAC12 /* HeroTableViewCell.m */; };
+		160ECC241FF9647F006CAC12 /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160ECC231FF9647F006CAC12 /* HeroViewController.m */; };
+		160ECC281FF99CC6006CAC12 /* china-stage.png in Resources */ = {isa = PBXBuildFile; fileRef = 160ECC251FF99CC4006CAC12 /* china-stage.png */; };
+		160ECC291FF99CC6006CAC12 /* colombia-stage.png in Resources */ = {isa = PBXBuildFile; fileRef = 160ECC261FF99CC5006CAC12 /* colombia-stage.png */; };
+		160ECC2A1FF99CC6006CAC12 /* germany-stage.png in Resources */ = {isa = PBXBuildFile; fileRef = 160ECC271FF99CC6006CAC12 /* germany-stage.png */; };
+		163C45DE1FF0E96F00EC96CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45DD1FF0E96F00EC96CF /* AppDelegate.m */; };
+		163C45E01FF0E96F00EC96CF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 163C45DF1FF0E96F00EC96CF /* GameScene.sks */; };
+		163C45E21FF0E96F00EC96CF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 163C45E11FF0E96F00EC96CF /* Actions.sks */; };
+		163C45E51FF0E96F00EC96CF /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45E41FF0E96F00EC96CF /* GameScene.m */; };
+		163C45E81FF0E96F00EC96CF /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45E71FF0E96F00EC96CF /* GameViewController.m */; };
+		163C45EB1FF0E96F00EC96CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163C45E91FF0E96F00EC96CF /* Main.storyboard */; };
+		163C45ED1FF0E96F00EC96CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163C45EC1FF0E96F00EC96CF /* Assets.xcassets */; };
+		163C45F01FF0E96F00EC96CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163C45EE1FF0E96F00EC96CF /* LaunchScreen.storyboard */; };
+		163C45F31FF0E96F00EC96CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45F21FF0E96F00EC96CF /* main.m */; };
+		163C45FB1FF0FB5400EC96CF /* MLHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45FA1FF0FB5400EC96CF /* MLHero.m */; };
+		163C45FE1FF1266300EC96CF /* MLWorldGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C45FD1FF1266300EC96CF /* MLWorldGenerator.m */; };
+		163C46011FF144EC00EC96CF /* MLPointsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C46001FF144EC00EC96CF /* MLPointsLabel.m */; };
+		163C46051FF17CAC00EC96CF /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C46041FF17CAC00EC96CF /* ground.png */; };
+		163C46081FF1860200EC96CF /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 163C46071FF1860200EC96CF /* GameData.m */; };
+		163C460B1FF1A51000EC96CF /* retro_game_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 163C46091FF1A50F00EC96CF /* retro_game_jump.mp3 */; };
+		163C460C1FF1A51000EC96CF /* zapsplat_voice_game_over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 163C460A1FF1A50F00EC96CF /* zapsplat_voice_game_over.mp3 */; };
+		163C46141FF1C34F00EC96CF /* hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C460E1FF1C34E00EC96CF /* hair.png */; };
+		163C46151FF1C34F00EC96CF /* leftArm.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C460F1FF1C34E00EC96CF /* leftArm.png */; };
+		163C46161FF1C34F00EC96CF /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C46101FF1C34E00EC96CF /* legs.png */; };
+		163C46171FF1C34F00EC96CF /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C46111FF1C34E00EC96CF /* head.png */; };
+		163C46181FF1C34F00EC96CF /* rightArm.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C46121FF1C34E00EC96CF /* rightArm.png */; };
+		163C46191FF1C34F00EC96CF /* torso.png in Resources */ = {isa = PBXBuildFile; fileRef = 163C46131FF1C34F00EC96CF /* torso.png */; };
+		16510C5A1FF297C300C14327 /* StagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510C591FF297C300C14327 /* StagesTableViewController.m */; };
+		16510C5E1FF2993000C14327 /* StagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510C5D1FF2993000C14327 /* StagesTableViewCell.m */; };
+		16510C931FF2B73100C14327 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510C921FF2B73100C14327 /* ViewController.m */; };
+		16510C961FF4114500C14327 /* game-trump.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16510C941FF4114500C14327 /* game-trump.xcdatamodeld */; };
+		16510C991FF44A1200C14327 /* CrudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510C981FF44A1200C14327 /* CrudViewController.m */; };
+		16510C9C1FF44CAC00C14327 /* MainCrudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510C9B1FF44CAC00C14327 /* MainCrudViewController.m */; };
+		16510C9E1FF558D800C14327 /* arabia-stage.png in Resources */ = {isa = PBXBuildFile; fileRef = 16510C9D1FF558D800C14327 /* arabia-stage.png */; };
+		16510CA01FF5620900C14327 /* koreia-stage.png in Resources */ = {isa = PBXBuildFile; fileRef = 16510C9F1FF5620800C14327 /* koreia-stage.png */; };
+		16510CA61FF5921700C14327 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16510CA51FF5921700C14327 /* GoogleService-Info.plist */; };
+		16510CA91FF66BBB00C14327 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16510CA81FF66BBB00C14327 /* AuthenticationViewController.m */; };
+		4E55EEA0404971B5162372C0 /* libPods-game-trump.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E20BB5C4A4934E05E1F9F20F /* libPods-game-trump.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		160ECC081FF8173E006CAC12 /* HighScoreModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighScoreModelManager.h; path = Game/HighScoreModelManager.h; sourceTree = "<group>"; };
+		160ECC091FF8173E006CAC12 /* HighScoreModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreModelManager.m; path = Game/HighScoreModelManager.m; sourceTree = "<group>"; };
+		160ECC0B1FF81B7F006CAC12 /* HighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScore.h; sourceTree = "<group>"; };
+		160ECC0C1FF81B7F006CAC12 /* HighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScore.m; sourceTree = "<group>"; };
+		160ECC101FF93DD7006CAC12 /* MD5+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MD5+NSString.h"; sourceTree = "<group>"; };
+		160ECC111FF93DD7006CAC12 /* MD5+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MD5+NSString.m"; sourceTree = "<group>"; };
+		160ECC121FF93DD8006CAC12 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		160ECC131FF93DD8006CAC12 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		160ECC141FF93DD8006CAC12 /* UIImageView+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+URL.h"; sourceTree = "<group>"; };
+		160ECC151FF93DD9006CAC12 /* UIImageView+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+URL.m"; sourceTree = "<group>"; };
+		160ECC191FF93DE6006CAC12 /* HeroesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroesTableViewController.m; sourceTree = "<group>"; };
+		160ECC1A1FF93DE6006CAC12 /* HeroesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroesTableViewController.h; sourceTree = "<group>"; };
+		160ECC1C1FF946E5006CAC12 /* HeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroModel.m; sourceTree = "<group>"; };
+		160ECC1D1FF946E6006CAC12 /* HeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroModel.h; sourceTree = "<group>"; };
+		160ECC1F1FF946F6006CAC12 /* HeroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTableViewCell.h; sourceTree = "<group>"; };
+		160ECC201FF946F6006CAC12 /* HeroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroTableViewCell.m; sourceTree = "<group>"; };
+		160ECC221FF9647E006CAC12 /* HeroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
+		160ECC231FF9647F006CAC12 /* HeroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
+		160ECC251FF99CC4006CAC12 /* china-stage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "china-stage.png"; sourceTree = "<group>"; };
+		160ECC261FF99CC5006CAC12 /* colombia-stage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colombia-stage.png"; sourceTree = "<group>"; };
+		160ECC271FF99CC6006CAC12 /* germany-stage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "germany-stage.png"; sourceTree = "<group>"; };
+		163C45D91FF0E96F00EC96CF /* game-trump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "game-trump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		163C45DC1FF0E96F00EC96CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		163C45DD1FF0E96F00EC96CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		163C45DF1FF0E96F00EC96CF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		163C45E11FF0E96F00EC96CF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		163C45E31FF0E96F00EC96CF /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		163C45E41FF0E96F00EC96CF /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		163C45E61FF0E96F00EC96CF /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		163C45E71FF0E96F00EC96CF /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		163C45EA1FF0E96F00EC96CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		163C45EC1FF0E96F00EC96CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		163C45EF1FF0E96F00EC96CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		163C45F11FF0E96F00EC96CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		163C45F21FF0E96F00EC96CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		163C45F91FF0FB5400EC96CF /* MLHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLHero.h; sourceTree = "<group>"; };
+		163C45FA1FF0FB5400EC96CF /* MLHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLHero.m; sourceTree = "<group>"; };
+		163C45FC1FF1266300EC96CF /* MLWorldGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLWorldGenerator.h; sourceTree = "<group>"; };
+		163C45FD1FF1266300EC96CF /* MLWorldGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLWorldGenerator.m; sourceTree = "<group>"; };
+		163C45FF1FF144EC00EC96CF /* MLPointsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLPointsLabel.h; sourceTree = "<group>"; };
+		163C46001FF144EC00EC96CF /* MLPointsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPointsLabel.m; sourceTree = "<group>"; };
+		163C46041FF17CAC00EC96CF /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		163C46061FF1860200EC96CF /* GameData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameData.h; sourceTree = "<group>"; };
+		163C46071FF1860200EC96CF /* GameData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameData.m; sourceTree = "<group>"; };
+		163C46091FF1A50F00EC96CF /* retro_game_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro_game_jump.mp3; sourceTree = "<group>"; };
+		163C460A1FF1A50F00EC96CF /* zapsplat_voice_game_over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zapsplat_voice_game_over.mp3; sourceTree = "<group>"; };
+		163C460E1FF1C34E00EC96CF /* hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair.png; sourceTree = "<group>"; };
+		163C460F1FF1C34E00EC96CF /* leftArm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArm.png; sourceTree = "<group>"; };
+		163C46101FF1C34E00EC96CF /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
+		163C46111FF1C34E00EC96CF /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		163C46121FF1C34E00EC96CF /* rightArm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArm.png; sourceTree = "<group>"; };
+		163C46131FF1C34F00EC96CF /* torso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torso.png; sourceTree = "<group>"; };
+		16510C581FF297C300C14327 /* StagesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StagesTableViewController.h; sourceTree = "<group>"; };
+		16510C591FF297C300C14327 /* StagesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StagesTableViewController.m; sourceTree = "<group>"; };
+		16510C5C1FF2993000C14327 /* StagesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StagesTableViewCell.h; sourceTree = "<group>"; };
+		16510C5D1FF2993000C14327 /* StagesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StagesTableViewCell.m; sourceTree = "<group>"; };
+		16510C911FF2B73100C14327 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16510C921FF2B73100C14327 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16510C951FF4114500C14327 /* game-trump.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "game-trump.xcdatamodel"; sourceTree = "<group>"; };
+		16510C971FF44A1200C14327 /* CrudViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrudViewController.h; sourceTree = "<group>"; };
+		16510C981FF44A1200C14327 /* CrudViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrudViewController.m; sourceTree = "<group>"; };
+		16510C9A1FF44CAC00C14327 /* MainCrudViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCrudViewController.h; sourceTree = "<group>"; };
+		16510C9B1FF44CAC00C14327 /* MainCrudViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCrudViewController.m; sourceTree = "<group>"; };
+		16510C9D1FF558D800C14327 /* arabia-stage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arabia-stage.png"; sourceTree = "<group>"; };
+		16510C9F1FF5620800C14327 /* koreia-stage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "koreia-stage.png"; sourceTree = "<group>"; };
+		16510CA51FF5921700C14327 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16510CA71FF66BBB00C14327 /* AuthenticationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
+		16510CA81FF66BBB00C14327 /* AuthenticationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
+		2443180C8000A7F6A2EACFD4 /* Pods-game-trump.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game-trump.release.xcconfig"; path = "Pods/Target Support Files/Pods-game-trump/Pods-game-trump.release.xcconfig"; sourceTree = "<group>"; };
+		E20BB5C4A4934E05E1F9F20F /* libPods-game-trump.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-game-trump.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD07CF0FDB2AFA876974153 /* Pods-game-trump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-game-trump.debug.xcconfig"; path = "Pods/Target Support Files/Pods-game-trump/Pods-game-trump.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163C45D61FF0E96F00EC96CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E55EEA0404971B5162372C0 /* libPods-game-trump.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163C45D01FF0E96F00EC96CF = {
+			isa = PBXGroup;
+			children = (
+				163C45DB1FF0E96F00EC96CF /* game-trump */,
+				163C45DA1FF0E96F00EC96CF /* Products */,
+				DCEB3A5028FAA693F61F83F6 /* Pods */,
+				27A43B8533AD52C07DF90029 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		163C45DA1FF0E96F00EC96CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163C45D91FF0E96F00EC96CF /* game-trump.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		163C45DB1FF0E96F00EC96CF /* game-trump */ = {
+			isa = PBXGroup;
+			children = (
+				1645C9CD1FF7CEFF00A135D9 /* Models */,
+				16510CA41FF5892400C14327 /* Game */,
+				16510C5B1FF2990C00C14327 /* Cells */,
+				16510C511FF2706700C14327 /* ViewsControllers */,
+				163C461A1FF1C88600EC96CF /* sounds */,
+				163C460D1FF1C33500EC96CF /* images */,
+				163C45DC1FF0E96F00EC96CF /* AppDelegate.h */,
+				163C45DD1FF0E96F00EC96CF /* AppDelegate.m */,
+				16510C941FF4114500C14327 /* game-trump.xcdatamodeld */,
+				163C45E11FF0E96F00EC96CF /* Actions.sks */,
+				163C45E91FF0E96F00EC96CF /* Main.storyboard */,
+				163C45EC1FF0E96F00EC96CF /* Assets.xcassets */,
+				163C45EE1FF0E96F00EC96CF /* LaunchScreen.storyboard */,
+				163C45F11FF0E96F00EC96CF /* Info.plist */,
+				163C45F21FF0E96F00EC96CF /* main.m */,
+				16510CA51FF5921700C14327 /* GoogleService-Info.plist */,
+				160ECC081FF8173E006CAC12 /* HighScoreModelManager.h */,
+				160ECC091FF8173E006CAC12 /* HighScoreModelManager.m */,
+				160ECC101FF93DD7006CAC12 /* MD5+NSString.h */,
+				160ECC111FF93DD7006CAC12 /* MD5+NSString.m */,
+				160ECC121FF93DD8006CAC12 /* Network.h */,
+				160ECC131FF93DD8006CAC12 /* Network.m */,
+				160ECC141FF93DD8006CAC12 /* UIImageView+URL.h */,
+				160ECC151FF93DD9006CAC12 /* UIImageView+URL.m */,
+			);
+			path = "game-trump";
+			sourceTree = "<group>";
+		};
+		163C460D1FF1C33500EC96CF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				160ECC251FF99CC4006CAC12 /* china-stage.png */,
+				160ECC261FF99CC5006CAC12 /* colombia-stage.png */,
+				160ECC271FF99CC6006CAC12 /* germany-stage.png */,
+				16510C9F1FF5620800C14327 /* koreia-stage.png */,
+				16510C9D1FF558D800C14327 /* arabia-stage.png */,
+				163C46041FF17CAC00EC96CF /* ground.png */,
+				163C460E1FF1C34E00EC96CF /* hair.png */,
+				163C46111FF1C34E00EC96CF /* head.png */,
+				163C460F1FF1C34E00EC96CF /* leftArm.png */,
+				163C46101FF1C34E00EC96CF /* legs.png */,
+				163C46121FF1C34E00EC96CF /* rightArm.png */,
+				163C46131FF1C34F00EC96CF /* torso.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		163C461A1FF1C88600EC96CF /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				163C46091FF1A50F00EC96CF /* retro_game_jump.mp3 */,
+				163C460A1FF1A50F00EC96CF /* zapsplat_voice_game_over.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		1645C9CD1FF7CEFF00A135D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				160ECC1D1FF946E6006CAC12 /* HeroModel.h */,
+				160ECC1C1FF946E5006CAC12 /* HeroModel.m */,
+				160ECC0B1FF81B7F006CAC12 /* HighScore.h */,
+				160ECC0C1FF81B7F006CAC12 /* HighScore.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16510C511FF2706700C14327 /* ViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				160ECC1A1FF93DE6006CAC12 /* HeroesTableViewController.h */,
+				160ECC191FF93DE6006CAC12 /* HeroesTableViewController.m */,
+				160ECC221FF9647E006CAC12 /* HeroViewController.h */,
+				160ECC231FF9647F006CAC12 /* HeroViewController.m */,
+				16510C581FF297C300C14327 /* StagesTableViewController.h */,
+				16510C591FF297C300C14327 /* StagesTableViewController.m */,
+				16510CA71FF66BBB00C14327 /* AuthenticationViewController.h */,
+				16510CA81FF66BBB00C14327 /* AuthenticationViewController.m */,
+				16510C911FF2B73100C14327 /* ViewController.h */,
+				16510C921FF2B73100C14327 /* ViewController.m */,
+				16510C971FF44A1200C14327 /* CrudViewController.h */,
+				16510C981FF44A1200C14327 /* CrudViewController.m */,
+				16510C9A1FF44CAC00C14327 /* MainCrudViewController.h */,
+				16510C9B1FF44CAC00C14327 /* MainCrudViewController.m */,
+			);
+			path = ViewsControllers;
+			sourceTree = "<group>";
+		};
+		16510C5B1FF2990C00C14327 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				160ECC1F1FF946F6006CAC12 /* HeroTableViewCell.h */,
+				160ECC201FF946F6006CAC12 /* HeroTableViewCell.m */,
+				16510C5C1FF2993000C14327 /* StagesTableViewCell.h */,
+				16510C5D1FF2993000C14327 /* StagesTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		16510CA41FF5892400C14327 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				163C45DF1FF0E96F00EC96CF /* GameScene.sks */,
+				163C45E31FF0E96F00EC96CF /* GameScene.h */,
+				163C45E41FF0E96F00EC96CF /* GameScene.m */,
+				163C46061FF1860200EC96CF /* GameData.h */,
+				163C46071FF1860200EC96CF /* GameData.m */,
+				163C45FF1FF144EC00EC96CF /* MLPointsLabel.h */,
+				163C46001FF144EC00EC96CF /* MLPointsLabel.m */,
+				163C45FC1FF1266300EC96CF /* MLWorldGenerator.h */,
+				163C45FD1FF1266300EC96CF /* MLWorldGenerator.m */,
+				163C45F91FF0FB5400EC96CF /* MLHero.h */,
+				163C45FA1FF0FB5400EC96CF /* MLHero.m */,
+				163C45E61FF0E96F00EC96CF /* GameViewController.h */,
+				163C45E71FF0E96F00EC96CF /* GameViewController.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		27A43B8533AD52C07DF90029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E20BB5C4A4934E05E1F9F20F /* libPods-game-trump.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCEB3A5028FAA693F61F83F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD07CF0FDB2AFA876974153 /* Pods-game-trump.debug.xcconfig */,
+				2443180C8000A7F6A2EACFD4 /* Pods-game-trump.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163C45D81FF0E96F00EC96CF /* game-trump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163C45F61FF0E96F00EC96CF /* Build configuration list for PBXNativeTarget "game-trump" */;
+			buildPhases = (
+				A8475E31C70C73D521404DBA /* [CP] Check Pods Manifest.lock */,
+				163C45D51FF0E96F00EC96CF /* Sources */,
+				163C45D61FF0E96F00EC96CF /* Frameworks */,
+				163C45D71FF0E96F00EC96CF /* Resources */,
+				68A586E9343E257F12AE1A25 /* [CP] Embed Pods Frameworks */,
+				468733908851D8BFA922B908 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "game-trump";
+			productName = "game-trump";
+			productReference = 163C45D91FF0E96F00EC96CF /* game-trump.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		163C45D11FF0E96F00EC96CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jailson Cavalcanti";
+				TargetAttributes = {
+					163C45D81FF0E96F00EC96CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 163C45D41FF0E96F00EC96CF /* Build configuration list for PBXProject "game-trump" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 163C45D01FF0E96F00EC96CF;
+			productRefGroup = 163C45DA1FF0E96F00EC96CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				163C45D81FF0E96F00EC96CF /* game-trump */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		163C45D71FF0E96F00EC96CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160ECC281FF99CC6006CAC12 /* china-stage.png in Resources */,
+				163C46051FF17CAC00EC96CF /* ground.png in Resources */,
+				163C46151FF1C34F00EC96CF /* leftArm.png in Resources */,
+				163C45EB1FF0E96F00EC96CF /* Main.storyboard in Resources */,
+				163C46141FF1C34F00EC96CF /* hair.png in Resources */,
+				163C460C1FF1A51000EC96CF /* zapsplat_voice_game_over.mp3 in Resources */,
+				163C46171FF1C34F00EC96CF /* head.png in Resources */,
+				163C460B1FF1A51000EC96CF /* retro_game_jump.mp3 in Resources */,
+				160ECC2A1FF99CC6006CAC12 /* germany-stage.png in Resources */,
+				163C46191FF1C34F00EC96CF /* torso.png in Resources */,
+				16510C9E1FF558D800C14327 /* arabia-stage.png in Resources */,
+				163C45E01FF0E96F00EC96CF /* GameScene.sks in Resources */,
+				163C45ED1FF0E96F00EC96CF /* Assets.xcassets in Resources */,
+				163C45F01FF0E96F00EC96CF /* LaunchScreen.storyboard in Resources */,
+				16510CA61FF5921700C14327 /* GoogleService-Info.plist in Resources */,
+				163C45E21FF0E96F00EC96CF /* Actions.sks in Resources */,
+				163C46181FF1C34F00EC96CF /* rightArm.png in Resources */,
+				163C46161FF1C34F00EC96CF /* legs.png in Resources */,
+				16510CA01FF5620900C14327 /* koreia-stage.png in Resources */,
+				160ECC291FF99CC6006CAC12 /* colombia-stage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		468733908851D8BFA922B908 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-game-trump/Pods-game-trump-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A586E9343E257F12AE1A25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-game-trump/Pods-game-trump-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8475E31C70C73D521404DBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-game-trump-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163C45D51FF0E96F00EC96CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16510C5E1FF2993000C14327 /* StagesTableViewCell.m in Sources */,
+				16510C991FF44A1200C14327 /* CrudViewController.m in Sources */,
+				163C46011FF144EC00EC96CF /* MLPointsLabel.m in Sources */,
+				16510C9C1FF44CAC00C14327 /* MainCrudViewController.m in Sources */,
+				160ECC241FF9647F006CAC12 /* HeroViewController.m in Sources */,
+				160ECC161FF93DD9006CAC12 /* MD5+NSString.m in Sources */,
+				163C46081FF1860200EC96CF /* GameData.m in Sources */,
+				160ECC0D1FF81B7F006CAC12 /* HighScore.m in Sources */,
+				163C45E51FF0E96F00EC96CF /* GameScene.m in Sources */,
+				160ECC171FF93DD9006CAC12 /* Network.m in Sources */,
+				163C45E81FF0E96F00EC96CF /* GameViewController.m in Sources */,
+				16510C931FF2B73100C14327 /* ViewController.m in Sources */,
+				16510C961FF4114500C14327 /* game-trump.xcdatamodeld in Sources */,
+				16510C5A1FF297C300C14327 /* StagesTableViewController.m in Sources */,
+				16510CA91FF66BBB00C14327 /* AuthenticationViewController.m in Sources */,
+				163C45F31FF0E96F00EC96CF /* main.m in Sources */,
+				163C45FB1FF0FB5400EC96CF /* MLHero.m in Sources */,
+				160ECC0A1FF8173F006CAC12 /* HighScoreModelManager.m in Sources */,
+				160ECC1B1FF93DE6006CAC12 /* HeroesTableViewController.m in Sources */,
+				160ECC211FF946F6006CAC12 /* HeroTableViewCell.m in Sources */,
+				163C45DE1FF0E96F00EC96CF /* AppDelegate.m in Sources */,
+				160ECC1E1FF946E6006CAC12 /* HeroModel.m in Sources */,
+				160ECC181FF93DD9006CAC12 /* UIImageView+URL.m in Sources */,
+				163C45FE1FF1266300EC96CF /* MLWorldGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		163C45E91FF0E96F00EC96CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163C45EA1FF0E96F00EC96CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		163C45EE1FF0E96F00EC96CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163C45EF1FF0E96F00EC96CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		163C45F41FF0E96F00EC96CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		163C45F51FF0E96F00EC96CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		163C45F71FF0E96F00EC96CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD07CF0FDB2AFA876974153 /* Pods-game-trump.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "game-trump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jailsonmc.game-trump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		163C45F81FF0E96F00EC96CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2443180C8000A7F6A2EACFD4 /* Pods-game-trump.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "game-trump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jailsonmc.game-trump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163C45D41FF0E96F00EC96CF /* Build configuration list for PBXProject "game-trump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163C45F41FF0E96F00EC96CF /* Debug */,
+				163C45F51FF0E96F00EC96CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163C45F61FF0E96F00EC96CF /* Build configuration list for PBXNativeTarget "game-trump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163C45F71FF0E96F00EC96CF /* Debug */,
+				163C45F81FF0E96F00EC96CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16510C941FF4114500C14327 /* game-trump.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16510C951FF4114500C14327 /* game-trump.xcdatamodel */,
+			);
+			currentVersion = 16510C951FF4114500C14327 /* game-trump.xcdatamodel */;
+			path = "game-trump.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 163C45D11FF0E96F00EC96CF /* Project object */;
+}

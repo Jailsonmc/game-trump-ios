@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>77194257396-5dcm7s9g32ijcm8pucuu4rkg2p6mrn1b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.77194257396-5dcm7s9g32ijcm8pucuu4rkg2p6mrn1b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDENmzhRn3oV03E_H-sN_ZD1k7YN36tYM4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>77194257396</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jailsonmc.game-trump</string>
+	<key>PROJECT_ID</key>
+	<string>game-trump-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>game-trump-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:77194257396:ios:435e2235bfdd334f</string>
+	<key>DATABASE_URL</key>
+	<string>https://game-trump-ios.firebaseio.com</string>
+</dict>
+</plist>
